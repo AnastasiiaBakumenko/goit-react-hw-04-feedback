@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
 function Statistics({ good, neutral, bad, total, positivePercentage }) {
+
   return (
     <ul>
       <li className={css.item}>
@@ -27,7 +28,7 @@ function Statistics({ good, neutral, bad, total, positivePercentage }) {
       <li className={css.item}>
         <p className={css.text}>
           Positive feedback:
-          <span className={css.value}>{positivePercentage}</span>
+          <span className={css.value}>{positivePercentage}%</span>
         </p>
       </li>
     </ul>
